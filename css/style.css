@@ -9,12 +9,153 @@ img {
     width: 100%;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* COMMON */
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
+    color: #000000;
 }
 
-body {
+.container {
+    width: 70%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    /* DEBUG */
+    border: 1px dashed white;
+}
+
+.container-big {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    /* DEBUG */
+    border: 1px dashed white;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    width: 100%;
+    height: 5em; 
+
+    /* DEBUG */
+    background-color: cadetblue;
+}
+
+main{
+    /* DEBUG */
     background-color: brown;
+}
+
+.jumbotron {
+    background-color: #b4d0e7;
+
+    /* DEBUG */
+    height: 800px;
+}
+
+.jumbotron-content {
+    width: 100%;
+
+    padding: 6em;
+
+    /* DEBUG */
+    height: 100%;
+}
+
+.plan-selection-first{
+    /* DEBUG */
+    height: 1000px;
+    background-color: chartreuse;
+}
+
+.plan-selection-second{
+    /* DEBUG */
+    height: 400px;
+    background-color: chartreuse;
+    margin-top: 20px;
+}
+
+.find-partner {
+    /* DEBUG */
+    height: 400px;
+    background-color: deeppink;
+    margin-top: 20px;
+}
+
+.features {
+    /* DEBUG */
+    height: 1000px;
+    background-color: chocolate;
+    margin-top: 20px;
+}
+
+.learn-more-customers {
+    /* DEBUG */
+    height: 300px;
+    background-color: aqua;
+    margin-top: 20px;
+}
+
+.customers-squares {
+    /* DEBUG */
+    height: 500px;
+    background-color: darkgray;
+}
+
+.cta {
+    color: #61082b;
+    background-color: #b4d0e7;
+
+    /* DEBUG */
+    height: 300px;
+}
+
+.cta-container {
+    width: 100%;
+
+    /* DEBUG */
+    height: 100%
+}
+
+.questions-answers {
+    /* DEBUG */
+    background-color: crimson;
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+}
+
+.footer-top {
+    color: #ffffff;
+
+    /* DEBUG */
+    height: 500px;
+}
+
+.footer-bottom {
+    color: #999999;
+
+    /* DEBUG */
+    height: 100px;
 }
