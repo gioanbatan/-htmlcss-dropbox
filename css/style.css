@@ -33,6 +33,15 @@ h1 {
     background-color: burlywood
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    /* DEBUG */
+    font-weight: 700;
+}
+
 .container {
     width: 70%;
     max-width: 1100px;
@@ -89,11 +98,6 @@ nav ul {
     height:100%;
 }
 
-main{
-    /* DEBUG */
-    background-color: brown;
-}
-
 .jumbotron {
     background-color: #b4d0e7;
     padding: 12em;
@@ -126,18 +130,61 @@ main{
     background-color: #61082b;
 }
 
-.plan-selection-first{
+/* MAIN */
+main{
     /* DEBUG */
-    height: 1000px;
-    background-color: chartreuse;
+    background-color: brown;
 }
 
-.plan-selection-second{
-    /* DEBUG */
-    height: 400px;
-    background-color: chartreuse;
-    margin-top: 20px;
+.plan-selection {
+        /* DEBUG */
+        background-color: chartreuse;
+
 }
+.plans {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+
+.plans-card {
+    width: calc(100% / 3 - 2em);
+    
+    display: flex;
+    flex-direction: column;
+    
+    /* DEBUG */
+    margin: 1em;
+    border: 1px solid black;
+}
+
+.plans-card-big {
+    width: 100%;
+
+    margin: 1em;
+    border: 1px solid black;
+}
+
+.plan-type {
+    /* DEBUG */
+    border-bottom: 1px solid black;
+}
+
+.plans-card-big-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.plan-big-description {
+    width: calc(100% / 3 * 2);
+}
+
+.plan-big-button {
+    width: calc(100% / 3);
+}
+
 
 .find-partner {
     /* DEBUG */
@@ -207,3 +254,4 @@ footer {
     /* DEBUG */
     height: 100px;
 }
+
