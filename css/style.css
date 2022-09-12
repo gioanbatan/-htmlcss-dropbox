@@ -1,0 +1,20 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/* COMMON */
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+body {
+    background-color: brown;
+}
