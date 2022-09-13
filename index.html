@@ -96,12 +96,17 @@
             <h2>Trova il piano business che fa per te</h2>
             
             <div class="billing-plan">
-                Fatturazione mensile - faturazione annuale
+                <input type="radio" id="month-billing" name="billing-rhythm" value="month">
+                <label for="month-billing">Fatturazione mensile</label>
+
+                <input type="radio" id="year-billing" name="billing-rhythm" value="year">
+                <label for="year-billing">Fatturazione annuale</label>
             </div>
 
             <div class="plans">
                 <div class="plans-card">
                     <div class="plan-type">
+                        <i class="fa-solid fa-user"></i>
                         Singolo
                     </div>
 
@@ -116,12 +121,12 @@
                             /mese
                         </div>
                         
-                        <ul class="plan-description-features">
-                            <li>1 utente</li>
-                            <li>5 TB di spazio di archiviazione sicuro</li>
-                            <li>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                        <ul class="fa-ul plan-description-features">
+                            <li><span class="fa-li"><i class="fa-solid fa-user"></i></span>1 utente</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span>5 TB di spazio di archiviazione sicuro</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
                         </ul>
-
+                      
                         <button>
                             Prova gratis per 30 giorni
                         </button>
@@ -132,37 +137,38 @@
                         
                         <hr>
 
-                        <h4>Punti salienti del piano</h4>
+                        <h4>Punti Salienti del piano</h4>
 
-                        <ul class="plan-description-main-points">
-                            <li>Invia file fino a 100GB con Dropbox Transfert</li>
-                            <li>Cartelle offline su dispositivi mobili</li>
+                        <ul class="fa-ul plan-description-main-points">
+                            <li><span class="fa-li blue-custom"><i class="fa-sharp fa-solid fa-check"></i></span>Invia file fino a 100GB con Dropbox Transfert</li>
+                            <li><span class="fa-li blue-custom"><i class="fa-sharp fa-solid fa-check"></i></span>Cartelle offline su dispositivi mobili</li>
                         </ul>
                     </div>
                 </div>
             
                 <div class="plans-card">
                     <div class="plan-type">
-                        Singolo
+                        <i class="fa-solid fa-users"></i>
+                        Team
                     </div>
 
                     <div class="plan-description">
-                        <h3>Professional</h3>
+                        <h3>Advanced</h3>
                         
                         <div class="plan-description-price">
-                            &euro; 12.00
+                            &euro; 18.00
                         </div>
                         
                         <div class="plan-description-price-for">
-                            /mese
+                            /utente/mese
                         </div>
                         
-                        <ul class="plan-description-features">
-                            <li>1 utente</li>
-                            <li>5 TB di spazio di archiviazione sicuro</li>
-                            <li>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                        <ul class="fa-ul plan-description-features">
+                            <li><span class="fa-li"><i class="fa-solid fa-users"></i></span>3 o più utenti</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span>Tutto lo spazio di cui ha bisogno il tuo team</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
                         </ul>
-
+                      
                         <button>
                             Prova gratis per 30 giorni
                         </button>
@@ -170,71 +176,77 @@
                         <div class="buy-plan">
                             oppure <a href="">acquista ora</a>
                         </div>
-
+                        
                         <hr>
 
-                        <h4>Punti salienti del piano</h4>
+                        <h4>Punti Salienti del piano</h4>
 
-                        <ul class="plan-description-main-points">
-                            <li>Invia file fino a 100GB con Dropbox Transfert</li>
-                            <li>Cartelle offline su dispositivi mobili</li>
+                        <ul class="fa-ul plan-description-main-points">
+                            <li><span class="fa-li blue-custom"><i class="fa-sharp fa-solid fa-check"></i></span>Nessun limite di spazio per i file</li>
+                            <li><span class="fa-li blue-custom"><i class="fa-sharp fa-solid fa-check"></i></span>Cartelle ofline su dispositivi mobili</li>
+                            <li><span class="fa-li blue-custom"><i class="fa-sharp fa-solid fa-check"></i></span>Risparmio del 50% rispetto alle iscrizioni singole</li>
+                            <li><span class="fa-li blue-custom"><i class="fa-sharp fa-solid fa-check"></i></span>Possibilità di inserire nuovi membri del team</li>
+                            <li><span class="fa-li blue-custom"><i class="fa-sharp fa-solid fa-check"></i></span>Gestione dei permessi in base ai ruoli</li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="plans-card">
                     <div class="plan-type">
-                        Singolo
+                        <i class="fa-sharp fa-solid fa-building"></i>
+                        Azienda
                     </div>
 
                     <div class="plan-description">
-                        <h3>Professional</h3>
+                        <h3>Enterprise</h3>
                         
                         <div class="plan-description-price">
-                            &euro; 12.00
+                            Contattaci
                         </div>
                         
                         <div class="plan-description-price-for">
-                            /mese
+                            -
                         </div>
                         
-                        <ul class="plan-description-features">
-                            <li>1 utente</li>
-                            <li>5 TB di spazio di archiviazione sicuro</li>
-                            <li>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                        <ul class="fa-ul plan-description-features">
+                            <li><span class="fa-li"><i class="fa-solid fa-users"></i></span>10 o più utenti</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span>Soluzioni personalizzabili per la tua azienda</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
                         </ul>
-
+                      
                         <button>
-                            Prova gratis per 30 giorni
+                            Contattaci
                         </button>
 
                         <div class="buy-plan">
                             oppure <a href="">acquista ora</a>
                         </div>
-
+                        
                         <hr>
 
-                        <h4>Punti salienti del piano</h4>
+                        <h4>Punti Salienti del piano</h4>
 
-                        <ul class="plan-description-main-points">
-                            <li>Invia file fino a 100GB con Dropbox Transfert</li>
-                            <li>Cartelle offline su dispositivi mobili</li>
+                        <ul class="fa-ul plan-description-main-points">
+                            <li><span class="fa-li blue-custom"><i class="fa-sharp fa-solid fa-check"></i></span>Cartelle ofline su dispositivi mobili</li>
+                            <li><span class="fa-li blue-custom"><i class="fa-sharp fa-solid fa-check"></i></span>Servizio assistenza 24/h</li>
+                            <li><span class="fa-li blue-custom"><i class="fa-sharp fa-solid fa-check"></i></span>Possibilità di personalizzazione totale</li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="plans-card-big">
                     <div class="plan-type">
-                        Singolo
+                        <i class="fa-sharp fa-solid fa-building"></i>
+                        Team
                     </div>
 
                     <div class="plans-card-big-content">
                         <div class="plan-big-description">
-                            <h3>Professional</h3>
+                            <h3>Enterprise</h3>
                             
                             <h4>Contatta l'ufficio vendite per i prezzi</h4>
-
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo dolor aliquid natus quaerat! Ipsam, itaque ab ipsum maiores ad, id rem quaerat cupiditate deleniti ratione error. Necessitatibus, ad nihil.</p>
+                            
+                            <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</q></p>
                         </div>
                         
                         <button class="plan-big-button">Contatta l'ufficio vendite</button>
@@ -248,13 +260,13 @@
         <!-- Find a partener box-->
         <section class="find-partner container">
             <div class="find-partner-image">
-
+                <img src="img/partner.png" alt="Find a partner">
             </div>
 
             <div class="find-partner-text">
-                <h3>Entra in contatto con un partener</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusantium est quis. Labore sed, aspernatur natus deleniti iste veniam? Vel aperiam placeat possimus harum iusto repellat facere aliquid voluptates ab.</p>
-                <button>Trova un partner</button>
+                <h3>Entra in contatto con un partner Dropbox</h3>
+                <p>Trova un pertner Dropbox e HelloSign di fiducia. Ottieni le sopluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                <button class="btn-white">Trova un partner</button>
             </div>    
         </section>
         <!-- /Find a partener box-->

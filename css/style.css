@@ -27,6 +27,9 @@ html {
 
 :root {
     --square-side: 15vw;
+    
+    /* Margin of custom list style of FontAwesome */
+    --fa-li-margin: 1.5em;
 }
 
 h1 {
@@ -39,7 +42,7 @@ h2 {
 }
 
 h3 {
-    /* DEBUG */
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -49,13 +52,20 @@ button {
     background-color: #0261fe;
     border: none;
 }
+
+.btn-white {
+    color:grey;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+
+}
 .container {
-    width: 70%;
+    width: 60%;
     max-width: 1100px;
     margin: 0 auto;
 
     /* DEBUG */
-    border: 1px dashed white;
+    border: 1px dashed red;
 }
 
 .container-big {
@@ -64,7 +74,13 @@ button {
     margin: 0 auto;
 
     /* DEBUG */
-    border: 1px dashed white;
+    border: 1px dashed red;
+}
+
+/* UTILITIES */
+
+.blue-custom {
+    color: #0568ff;
 }
 
 /* HEADER */
@@ -128,7 +144,7 @@ nav ul {
     justify-content: start;
     
     width: 100%;
-    padding: 3em 0 1em;
+    padding: 3em 0 0em;
 
 }
 
@@ -154,16 +170,19 @@ nav ul {
 }
 
 /* MAIN */
-main{
-    /* DEBUG */
-    background-color: brown;
+/* Billing rhythm selection */
+.billing-plan {
+    padding: 3em 0 2.5em;
 }
 
+.billing-plan label{
+    padding-right: 2em;
+}
 .plan-selection {
-        /* DEBUG */
-        background-color: chartreuse;
+    padding-top: 9em;
 }
 
+/* Plans */
 .plans {
     width: 100%;
     
@@ -174,65 +193,117 @@ main{
 
 /* Plan card */
 .plans-card {
-    width: calc(100% / 3 - 2em);
+    width: calc(100% / 3 - ((3em / 3) * 2));
     
     display: flex;
     flex-direction: column;
     
-    /* DEBUG */
-    margin: 1em;
-    border: 1px solid black;
+    margin-right: 3em;
+    border: 1px solid #d0d0d0;
 }
 
+.plans-card:nth-child(3n) {
+    margin: 0 0;
+}
 
 .plan-type {
-    /* DEBUG */
-    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.plan-description {
+    padding: 1em;
+}
+
+.plan-description * {
+    margin-bottom: 1em
+}
+
+.plan-description-price{
+    font-weight: 700;
+}
+
+.plan-description-price-for{
+    font-weight: 100;
+    margin-bottom: 3em;
+}
+
+.plan-description button {
+    width: 100%;
+    margin: 2em 0;
+}
+
+.plan-description a {
+    text-decoration: revert;
+    color: revert;
+}
+
+.plan-description hr {
+    width: 20%;
+    height: 1px;
+
+    margin: 2.3em 0;
+
+    background-color: #d0d0d0;
+    border: none;
 }
 
 /* Big plan card */
 .plans-card-big {
     width: 100%;
 
-    margin: 1em;
-    border: 1px solid black;
+    margin: 1em 0; 
+    border: 1px solid #d0d0d0;
 }
 
 .plans-card-big-content {
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2em;
 }
 
 .plan-big-description {
-    width: calc(100% / 3 * 2);
+    width: 75%;
+}
+
+.plan-big-description * {
+    margin-bottom: 1em;
+}
+
+.plan-big-description p {
+    margin-top: 3em;
 }
 
 .plan-big-button {
-    width: calc(100% / 3);
+    display: inline;
+    width: 25%;
 }
 
 /* Find partner section */
 .find-partner {
     display: flex;
+    align
 
-    /* DEBUG */
-    /* height: 400px; */
-    background-color: deeppink;
     margin-top: 20px;
 }
 
 .find-partner-image {
     width: 60%;
-
-    /* DEBUG */
-    background-color: pink;
 }
 
 .find-partner-text {
     width: 40%;
+    padding: 2em;
+}
 
-    /* DEBUG */
-    background-color: lightgray;
+.find-partner-text h3 {
+    margin-bottom: 0.5em;
+}
+
+.find-partner-text p {
+    margin-bottom: 1.8em;
 }
 
 /* Features */
