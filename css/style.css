@@ -16,6 +16,8 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+
+    cursor: pointer;
 }
 
 /* COMMON */
@@ -23,11 +25,15 @@ html {
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
     color: #000000;
+
+    scroll-behavior: smooth;
 }
 
 :root {
     /* --square-side: calc(100vw / 6); */
     --square-side: 150px;
+
+    --test: "f";
 
     /* Margin of custom list style of FontAwesome */
     --fa-li-margin: 1.5em;
@@ -48,16 +54,29 @@ h3 {
 }
 
 h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 button {
+    font-size: 1rem;
     padding: 1em;
     color:#ffffff;
     background-color: #0261fe;
     border: none;
+
+    cursor: pointer;
 }
+
+button:hover {
+    filter:brightness(130%);
+}
+
+button:active {
+    color: #000000;
+    background-color: #ffffff;
+}
+
 
 .btn-white{
     padding: 0.8em 3em;
@@ -66,28 +85,41 @@ button {
     border: none;
 }
 
+.btn-white:active {
+    color: #ffffff;
+    background-color: #000000;
+}
+
 .btn-white-border{
     padding: 0.5em;
     color: #000000;
     background-color: #ffffff;
     border: 1px solid #000000;
 }
+
+.btn-white-border:active {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.btn-white:hover {
+    filter:brightness(70%);
+}
+
+.btn-white-border:hover {
+    filter:brightness(70%);
+}
+
 .container {
-    width: 60%;
+    width: 70%;
     max-width: 1100px;
     margin: 0 auto;
-
-    /* DEBUG */
-    border: 1px dashed red;
 }
 
 .container-big {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    
-    /* DEBUG */
-    border: 1px dashed red;
 }
 
 /* UTILITIES */
@@ -95,7 +127,6 @@ button {
 .blue-custom {
     color: #0568ff;
 }
-
 
 .default-a {
     text-decoration: revert;
@@ -123,7 +154,7 @@ button {
 }
 
 .hr-grey {
-    margin: 2.3em 0;
+    margin: 2em 0;
     height: 1px;
 
     color: #999999;
@@ -157,6 +188,7 @@ nav {
 
 nav ul {
     display: flex;
+    /* justify-content: space-between; */
     height: 100%;
 }
 
@@ -189,7 +221,6 @@ nav ul {
     
     width: 100%;
     padding: 3em 0 0em;
-
 }
 
 .jumbotron-content-text {
@@ -320,7 +351,6 @@ nav ul {
 /* Find partner section */
 .find-partner {
     display: flex;
-    align
 
     margin-top: 20px;
 }
@@ -382,27 +412,33 @@ nav ul {
 
 /* Cusomers banner */
 .customers {
+    /* DEBUG */
     background-color: darkgray;
 }
 
 .customers-squares-container {
     display: flex;
-    width: 100%;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+
+    background-color: #0568ff;
 }
 
 .square-box {
     display: flex;
     flex-wrap: wrap;
     
-    width: calc(100vw / 3);
+    width: calc(100% / 3);
+    /* width: calc(var(--square-side) * 2); */
 }
 
 .square {
     position: relative;
 
-    width: var(--square-side);
-    height: var(--square-side);
+    --lato: calc(100% / 2);
+
+    width: calc(100% / 2);
+    /* width: var(--square-side); */
+    height: var(--lato);
 
     /* DEBUG */
     border: 1px dashed black;
@@ -419,6 +455,8 @@ nav ul {
 }
 
 .square-quote {
+    width: calc(100% / 3);
+    /* flex-shrink: 2; */
     /* width: 100%; */
     /* padding: 2em; */
 }
@@ -454,23 +492,27 @@ nav ul {
 .questions-answers-content {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.questions-answers-text {
-    width: 95%
-}
-.questions-answers-text h4 {
-    margin-bottom: 3em;
+.question {
+    width: 90%;
 }
 
-.questions-answers-text .answer {
-    /* DEBUG */
-    /* display: none; */
+.angle-up {
+    width: 10%;
+    color:#000000;
+    background-color: #ffffff;
 }
 
-.questions-answers-content .angle-up {
-    width: 5%;
+.answer {
+    display: none;
 }
+
+.questions-answers-content:hover .answer {
+    display: block;
+}
+
 
 /* FOOTER */
 footer {
@@ -507,6 +549,8 @@ footer {
     color: #999999;
     background-color: #000000;
     border: none;
+
+    cursor: pointer;
 
     /* TEST */
     /* appearance: none; */
