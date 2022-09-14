@@ -31,7 +31,7 @@ html {
 
 :root {
     /* --square-side: calc(100vw / 6); */
-    --square-side: 150px;
+    --square-side: 25vh;
 
     --test: "f";
 
@@ -398,12 +398,12 @@ nav ul {
 
 /* Learn more on customers - box*/
 .learn-more-customers {
-    margin-bottom: 5em;
+    /* margin-bottom: 5em; */
 }
 
 .learn-more-customers h2 {
     width: 70%;
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 .learn-more-customers a {
@@ -412,13 +412,10 @@ nav ul {
 
 /* Cusomers banner */
 .customers {
-    /* DEBUG */
-    background-color: darkgray;
-}
-
-.customers-squares-container {
     display: flex;
     justify-content: space-between;
+
+    margin-top: 8em;
 
     background-color: #0568ff;
 }
@@ -427,25 +424,20 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     
-    width: calc(100% / 3);
-    /* width: calc(var(--square-side) * 2); */
+    width: calc(var(--square-side) * 2);
+    height: calc(var(--square-side) * 2);
 }
 
 .square {
     position: relative;
-
-    --lato: calc(100% / 2);
-
-    width: calc(100% / 2);
-    /* width: var(--square-side); */
-    height: var(--lato);
-
+    height: var(--square-side);
+    width: var(--square-side);
     /* DEBUG */
     border: 1px dashed black;
 }
 
 .square img {
-    display: block;
+    /* display: block; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -455,13 +447,11 @@ nav ul {
 }
 
 .square-quote {
-    width: calc(100% / 3);
-    /* flex-shrink: 2; */
-    /* width: 100%; */
-    /* padding: 2em; */
+    width: calc(var(--square-side) * 2);
+    padding: calc(var(--square-side) / 8);
 }
 .square-quote img {
-    width: 70%;
+    width: 100%;
 }
 
 /* Call To Action */
@@ -484,7 +474,6 @@ nav ul {
 
 /* Faq section */
 .questions-answers {
-    /* DEBUG */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -512,7 +501,6 @@ nav ul {
 .questions-answers-content:hover .answer {
     display: block;
 }
-
 
 /* FOOTER */
 footer {
